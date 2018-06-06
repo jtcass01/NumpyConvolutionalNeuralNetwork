@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fd0980ea-13a8-4f11-acd3-7b17fbae003f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ConvNetwork.py</StartupFile>
+    <StartupFile>zero_pad.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ConvNetwork.py" />
+    <Compile Include="conv_backward.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="conv_single_step.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="conv_forward.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="create_mask_from_window.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="distribute_value.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pool_backward.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pool_forward.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zero_pad.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
